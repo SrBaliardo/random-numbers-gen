@@ -59,7 +59,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.btn-sort {
+.btn-draw {
     width: 150px;
     height: 55px;
     border-radius: 15px;
@@ -74,11 +74,11 @@ input::-webkit-inner-spin-button {
     height: 90%;
 }
 
-.btn-sort:hover {
+.btn-draw:hover {
     transform: scale(120%);
 }
 
-.btn-sort:active {
+.btn-draw:active {
     opacity: .5;
 }
 
@@ -163,7 +163,7 @@ input::-webkit-inner-spin-button {
     background-color: crimson;
 }
 
-.btn-rsort {
+.btn-rdraw {
     background-color: greenyellow;
 }
 
