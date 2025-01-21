@@ -1,176 +1,179 @@
 body {
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-roulette {
-   height: 200px;
-   position: relative;
-   bottom: 30px;
+  height: 200px;
+  position: relative;
+  bottom: 30px;
 }
 
 .title {
-    color: #FFFFFF;
-    font-size: 7rem;
-    position: relative;
-    bottom: 80px;
+  color: #ffffff;
+  font-size: 7rem;
+  position: relative;
+  bottom: 80px;
 }
 
 .title span {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 .paragraph {
-    color: #FFFFFF;
-    font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
-
 .inputs {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    width: 600px;
-    max-width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  width: 600px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 .label {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .inputs input {
-    width: 150px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 5px;
-    border-radius: 10px;
-    text-align: center;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn-draw {
-    width: 150px;
-    height: 55px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px #A2A2A2;
-    background-color: greenyellow;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    padding: 5px;
+  width: 150px;
+  height: 55px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #a2a2a2;
+  background-color: greenyellow;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 5px;
 }
 
 .img-dice {
-    height: 90%;
+  height: 90%;
 }
 
 .btn-draw:hover {
-    transform: scale(120%);
+  transform: scale(120%);
 }
 
 .btn-draw:active {
-    opacity: .5;
+  opacity: 0.5;
 }
 
 .form-roll {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 1;
-    transition: .3s ease;
-    max-width: 90%;
-    max-height: 90%;
-    visibility: hidden;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  transition: 0.3s ease;
+  max-width: 90%;
+  max-height: 90%;
+  visibility: hidden;
 }
 
 .results {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .result {
-    font-size: 2.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #A2A2A2;
-    box-shadow: 2px 2px 2px #333;
-    border-radius: 50%;
-    background-color: sandybrown;
-    color: #FFFFFF;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #a2a2a2;
+  box-shadow: 2px 2px 2px #333;
+  border-radius: 50%;
+  background-color: sandybrown;
+  color: #ffffff;
 }
 
 .form-bg {
-    position: fixed;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    transition: .3s ease;
+  position: fixed;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
 }
 
 .btns {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .btn {
-    color: #000000;
-    border-radius: 10px;
-    width: 90px;
-    height: 30px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 2px 2px 2px #333;
-    transition: .1s ease;
-    
+  color: #000000;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 2px 2px 2px #333;
+  transition: 0.1s ease;
 }
 
 .btn-close {
-    background-color: crimson;
+  background-color: crimson;
 }
 
 .btn-rdraw {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 .btn:hover {
-    transform: scale(111%);
+  transform: scale(111%);
 }
 
 .btn:active {
-    opacity: .7;
+  opacity: 0.7;
 }
